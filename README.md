@@ -5,4 +5,4 @@
 --------------------------------------------------------------------------------------
                         PREVIEW
                         
-                        ![Screenshot from 2022-10-15 15-36-34](https://user-images.githubusercontent.com/70456830/196035830-0ea327e0-7acb-417a-947a-a95535763080.png)
+![Screenshot from 2022-10-15 15-36-34](https://user-images.githubusercontent.com/70456830/196035830-0ea327e0-7acb-417a-947a-a95535763080.png)
