@@ -1,0 +1,434 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Inknut+Antiqua:wght@300&display=swap");
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(167, 61, 206, 0.3);
+  padding: 20px;
+  height: 100px;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Inknut Antiqua", serif;
+}
+
+legend {
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+  font-family: "Inknut Antiqua", serif;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 1%;
+  background-image: url("./images/background3.png");
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
+
+fieldset {
+  display: flex;
+  width: 50%;
+  padding-left: 25px !important;
+  margin-top: 20px !important;
+}
+
+h1 {
+  color: rgb(241, 241, 241);
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main form {
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.146);
+  font-size: 18px;
+  font-family: "Inknut Antiqua", serif;
+}
+
+input,
+textarea {
+  background: rgba(0, 0, 0, 0.3) !important;
+  color: white !important;
+  font-size: 18px !important;
+  border-color: rgba(224, 221, 221) !important;
+}
+
+input::placeholder {
+  color: white !important;
+}
+
+select {
+  background: rgba(0, 0, 0, 0.3) !important;
+  color: white !important;
+  font-size: 18px !important;
+}
+
+footer {
+  position: fixed;
+  color: white;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  padding: 0;
+  background-color: rgba(167, 61, 206, 0.3);
+  height: 50px;
+}
+
+footer p {
+  padding: 10px;
+  margin-bottom: 0;
+}
+
+button {
+  background-color: rgb(167, 61, 206) !important;
+  color: rgb(239, 236, 240) !important;
+  font-size: 18px !important;
+  font-family: "Inknut Antiqua", serif;
+}
+
+.trybewarts-login {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-check-input:checked {
+  background-color: #a73dce !important;
+  border: #a73dc6 !important;
+}
+
+.form {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  width: 675px;
+  border-radius: 5px;
+  margin: 50px 40px;
+  padding: 20px;
+}
+
+.form-1 {
+  display: flex;
+  align-items: center;
+}
+
+.form-1 div {
+  margin: 5px;
+}
+
+.form-1 div input {
+  width: 100%;
+}
+
+.houses-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.form-group input {
+  width: 100%;
+  height: 59px;
+  margin-top: 5px;
+  padding-left: 10px;
+}
+
+.trybewarts-header-logo {
+  display: flex;
+  width: 100px;
+  padding: 5px;
+}
+
+.form-2 {
+  margin-top: 20px;
+}
+
+.form-2 div {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+/* Ramon G B S Requisito 13 */
+
+.form-3 {
+  display: flex;
+  margin-top: 10px !important;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 675px;
+}
+
+.form-4 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 2%;
+  position: relative;
+}
+
+.checkbox-container {
+  display: none;
+}
+
+#form-data {
+  color: white;
+  font-size: 25px;
+  font-family: "Inknut Antiqua", serif;
+  text-align: center;
+  margin-top: 10%;
+}
+
+#label-home {
+  margin-top: 20px;
+}
+
+#input-name {
+  margin-bottom: 10px;
+}
+
+#evaluation-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 0 !important;
+}
+
+#evaluation {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-left: 10px;
+}
+
+#evaluation label {
+  margin-left: 5px;
+  margin-right: 8px;
+}
+
+#label-rate {
+  margin-top: 20px;
+}
+
+#agreement {
+  margin-left: 10px;
+}
+
+#counter {
+  position: absolute;
+  left: 580px;
+  top: 235px;
+}
+
+/* Pedro E. Requesito 6 */
+#evaluation-form {
+  flex-direction: column;
+}
+
+/* Pedro E. Requesito 7 */
+#trybewarts-forms-logo {
+  height: 1100px;
+  animation: mover 2s infinite alternate;
+  opacity: 0.7;
+}
+
+/* Referência: https://stackoverflow.com/questions/27123399/how-to-move-an-image-up-and-down-smoothly-with-css */
+
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1661px) {
+  body {
+    background-image: url("./images/background2.png");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 10px;
+    height: 50px;
+  }
+
+  h1 {
+    font-size: 30px !important;
+  }
+
+  input,
+  textarea {
+    font-size: 16px !important;
+  }
+
+  legend {
+    font-size: 24px !important;
+  }
+  main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .trybewarts-header-logo {
+    display: flex;
+    width: 50px;
+    padding: 5px;
+  }
+
+  .form {
+    width: 600px;
+    height: 80%;
+    margin: 20px 40px;
+    font-size: 14px !important;
+  }
+
+  .form-1 {
+    display: flex;
+    align-items: center;
+    margin: 0 !important;
+  }
+
+  #trybewarts-forms-logo {
+    height: 700px;
+    width: 90%;
+    animation: mover 2s infinite alternate;
+    opacity: 0.7;
+  }
+
+  .form-2 {
+    margin-top: 5px !important;
+  }
+
+  .form-2 div {
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+
+  .form-3 {
+    margin: 0 !important;
+  }
+
+  .form-4 {
+    margin: 0 !important;
+  }
+
+  /* Ramon G B S Requisito 13 */
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    background-image: url("./images/background2.png");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  header {
+    display: flex;
+    justify-content: center !important;
+    padding: 10px 10px;
+    height: 60px;
+  }
+
+  h1 {
+    font-size: 30px !important;
+    text-align: center;
+  }
+
+  .form {
+    font-size: 14px !important;
+  }
+
+  .trybewarts-login {
+    display: none;
+  }
+
+  .trybewarts-header-logo {
+    display: none;
+  }
+
+  #trybewarts-forms-logo {
+    display: none;
+  }
+
+  /*  */
+  .checkbox-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .checkbox {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 9999;
+    transition: 400ms ease-in-out 0s;
+  }
+
+  .checkbox .trace {
+    width: 50px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    border-radius: 4px;
+    transition: 0.5s ease-in-out;
+  }
+  .checkbox .trace:nth-child(1) {
+    top: 10px;
+    transform: rotate(0);
+  }
+
+  .checkbox .trace:nth-child(2) {
+    top: 25px;
+    transform: rotate(0);
+  }
+
+  .checkbox .trace:nth-child(3) {
+    top: 40px;
+    transform: rotate(0);
+  }
+
+  #toggle {
+    display: none;
+  }
+
+  #counter {
+    left: 480px;
+    top: 285px;
+  }
+}
+

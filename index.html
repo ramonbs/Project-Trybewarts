@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script src="./script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Inknut+Antiqua:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Trybewarts</title>
+  </head>
+  <body>
+    <!-- Ramon G. B. S. requisito 1 -->
+    <header class="header">
+      <div class="checkbox-container">
+        <div class="checkbox-wrapper">
+            <input type="checkbox" id="toggle">
+            <label class="checkbox" for="toggle">
+               <div class="trace"></div>
+               <div class="trace"></div>
+               <div class="trace"></div>
+           </label>
+        </div>
+    </div>
+      <!-- Pedro E.  requisito 2-->
+      <section>
+        <img
+          src="images/trybewarts-header-logo.svg"
+          alt="trybeWarts"
+          class="trybewarts-header-logo"
+        />
+      </section>
+
+      <!-- Pedro E. Requesito 4 -->
+      <h1 id="trybewarts-header-title" class="display-2">Trybewarts</h1>
+
+      <!-- Ramon G. B. S. requisito 3 -->
+      <section class="login">
+        <form class="trybewarts-login" action="">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            class="form-control-sm"
+          />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Senha"
+            class="form-control-sm"
+          />
+          <button id="enter-btn" class="btn button">Entrar</button>
+        </form>
+      </section>
+    </header>
+    <!-- Parte do form para coloca nome, sobrenome, email e casa -->
+    <!-- Ramon G. B. S. requisito 5 e 8-->
+    <main>
+      <form id="evaluation-form" class="form" action="">
+        <legend class="display-6">Formulário de avaliação</legend>
+        <fieldset class="container form-1">
+          <!-- <legend>Dados Pessoais:</legend> -->
+
+          <div id="name-div" class="form-group">
+            <div>
+              <label for="input-name">Nome:</label>
+              <input
+                type="text"
+                name="name"
+                id="input-name"
+                placeholder="Nome"
+                class="form-control-sm border border-dark"
+                required
+              />
+            </div>
+            <div>
+              <label for="input-email">Email:</label>
+              <input
+                type="email"
+                name="email"
+                id="input-email"
+                placeholder="Email"
+                class="form-control-sm border border-dark"
+                required
+              />
+            </div>
+          </div>
+
+          <div id="lastname-div" class="form-group">
+            <div>
+              <label for="input-lastname">Sobrenome:</label>
+              <input
+                type="text"
+                name="lastname"
+                id="input-lastname"
+                placeholder="Sobrenome"
+                class="form-control-sm border border-dark"
+                required
+              />
+            </div>
+            <!-- Parte do forms para escolher a casa -->
+            <!-- Pedro E. requesito 9 -->
+            <div>
+              <label id="label-home" for="">Casa:</label>
+              <select name="house" id="house" class="form-select-sm w-100">
+                <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+                <option value="Reactpuff" id="reactpuff-house">
+                  Reactpuff
+                </option>
+                <option value="Corvinode" id="corvinode-house">
+                  Corvinode
+                </option>
+                <option value="Pytherina" id="pytherina-house">
+                  Pytherina
+                </option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+        
+        <!-- Parte do forms para escolher a família -->
+        <!-- Pedro E. Requesito 12 -->
+        <fieldset class="form-2">
+          <section>
+            <label for="" id="label-family">Qual sua família?</label>
+            <div>
+              <input
+                type="radio"
+                name="family"
+                value="Frontend"
+                class="form-check-input family border border-white"
+              />
+              <label for="" class="form-check-label">FrontEnd</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="family"
+                value="Backend"
+                class="form-check-input family border border-white"
+              />
+              <label for="" class="form-check-label">Backend</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="family"
+                value="FullStack"
+                class="form-check-input family border border-white"
+              />
+              <label for="" class="form-check-label">FullStack</label>
+            </div>
+          </section>
+        </fieldset>
+
+        <!-- Forms contendo checkboxs -->
+        <!-- Ramon G B S Requisito 13 -->
+
+        <fieldset id = "label-container" class="container">
+          <div class="div-label">
+            <label for="" id="label-content" class="form-check-label"
+              >"Qual conteúdo você está com mais vontade de aprender?"</label
+            >
+          </div>
+        </fieldset>
+        <fieldset class="container form-3">
+          <div>
+            <input
+              type="checkbox"
+              name=""
+              value="HoFs"
+              id=""
+              class="subject form-check-input"
+            />
+            <label for="" class="form-check-label">HoFs</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name=""
+              value="Jest"
+              id=""
+              class="subject form-check-input"
+            />
+            <label for="" class="form-check-label">Jest</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name=""
+              value="Promises"
+              id=""
+              class="subject form-check-input"
+            />
+            <label for="" class="form-check-label">Promises</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name=""
+              value="React"
+              id=""
+              class="subject form-check-input"
+            />
+            <label for="" class="form-check-label">React</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name=""
+              value="SQL"
+              id=""
+              class="subject form-check-input"
+            />
+            <label for="" class="form-check-label">SQL</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name=""
+              value="Python"
+              id=""
+              class="subject form-check-input"
+            />
+            <label for="" class="form-check-label">Python</label>
+          </div>
+        </fieldset>
+
+        <!-- Campo de radio para as opções de nota -->
+        <!-- Pedro E. requesito 14 -->
+        <fieldset id="evaluation-container">
+          <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
+          <div id="evaluation">
+            <input
+              id="rate"
+              type="radio"
+              value="1"
+              name="rate"
+              class="rate form-check-input border border-white"
+            />
+            <label for="" class="form-check-label">1</label>
+            <input
+              type="radio"
+              value="2"
+              name="rate"
+              class="rate form-check-input border border-white"
+            />
+            <label for="" class="form-check-label">2</label>
+            <input
+              type="radio"
+              value="3"
+              name="rate"
+              class="rate form-check-input border border-white"
+            />
+            <label for="" class="form-check-label">3</label>
+            <input
+              type="radio"
+              value="4"
+              name="rate"
+              class="rate form-check-input border border-white"
+            />
+            <label for="" class="form-check-label">4</label>
+            <input
+              type="radio"
+              value="5"
+              name="rate"
+              class="rate form-check-input border border-white"
+            />
+            <label for="" class="form-check-label">5</label>
+            <input
+              type="radio"
+              value="6"
+              name="rate"
+              class="rate form-check-input border border-white"
+            />
+            <label for="" class="form-check-label">6</label>
+            <input
+              type="radio"
+              value="7"
+              name="rate"
+              class="rate form-check-input border border-white"
+            />
+            <label for="" class="form-check-label">7</label>
+            <input
+              type="radio"
+              value="8"
+              name="rate"
+              class="rate form-check-input border border-white"
+            />
+            <label for="" class="form-check-label">8</label>
+            <input
+              type="radio"
+              value="9"
+              name="rate"
+              class="rate form-check-input border border-white"
+            />
+            <label for="" class="form-check-label">9</label>
+            <input
+              type="radio"
+              value="10"
+              name="rate"
+              class="rate rate form-check-input border border-white"
+            />
+            <label for="" class="form-check-label">10</label>
+          </div>
+        </fieldset>
+
+        <!-- Área de texto para sugestões e comentários -->
+        <!-- Ramon G B S requisito 15 -->
+        <fieldset class="form-4 container">
+          <label for="" class="textarea form-label"
+            >Deixe seu comentário:</label
+          >
+
+          <textarea
+            name="textarea"
+            cols="30"
+            rows="10"
+            class="form-control-sm border border-dark"
+            maxlength="500"
+            id="textarea"
+          ></textarea>
+          <span id="counter">500</span>
+        </fieldset>
+
+        <!-- Campo de aceite -->
+        <!-- Pedro E. Requesito 16 -->
+        <fieldset id="" class="container">
+          <label for="" id="label-infos"
+            >Você concorda com o uso das informações acima?</label
+          >
+          <input
+            type="checkbox"
+            id="agreement"
+            class="form-check-input border border-white"
+          />
+        </fieldset>
+        <button type="submit" id="submit-btn" class="btn mt-3">Enviar</button>
+      </form>
+      <!-- Logo trybewarts do lado direito do forms -->
+      <!-- /* Pedro E. Requesito 7 */ -->
+      <section>
+        <img
+          src="images/trybewarts-colored.svg"
+          alt="logo-Trybewarts"
+          id="trybewarts-forms-logo"
+        />
+      </section>
+    </main>
+  </body>
+
+  <!-- Footer -->
+  <!-- Ramon G B S Requisito 19 -->
+  <footer>
+    <p id="footer">Direitos reservados à Trybewarts©</p>
+  </footer>
+</html>
